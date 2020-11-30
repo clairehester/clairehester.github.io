@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Claire Hester's Data Science Portfolio</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/img/circle-cropped.png"/>
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -50,9 +50,9 @@
                     </div>
                     <p class="lead mb-5">Hi there! I am a data scientist with 8 years of experience in data analytics, process improvement, and account management within the retail industry.  I have a passion for studying and solving complex problems with a data-first approach and a community-oriented attitude.</p>
                     <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/claire-petersen-hester/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/clairehester"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://medium.com/@claire.hester"><i class="fab fa-medium"></i></a>
+                        <a class="social-icon" href="https://www.linkedin.com/in/claire-petersen-hester/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/clairehester" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://medium.com/@claire.hester" target="_blank"><i class="fab fa-medium"></i></a>
                     </div>
                 </div>
             </section>
@@ -73,7 +73,7 @@
                                 For face detection, I used two different models. MTCNN  had a higher degree of accuracy and was able to detect a higher number of faces. 
                                 I also used an OpenCV built-in DNN. Though this model had a lower accuracy, the frames per second was 4 times faster than the MTCNN model. 
                                 The face mask classifier was built on a MobileNetV2 base with a custom head layer. I achieved a 94% accuracy after 25 epochs, with a loss of 0.19. 
-                                The "With Mask" category had the most samples for training and had a recall of 99%.
+                                The "With Mask" category had the most samples for training and had a recall of 99%. <br>
                                 To learn more about this project, <a href="https://github.com/clairehester/face-mask-detector">click here.</a></p>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
                             <br>
                             <img style="float: right; margin: 0px 0px 10px 10px;" src="assets/img/Reddit_VerticalLockup_OnWhite.png"/>
                             <p>Reddit calls itself the front page of the internet, and one very popular use of Reddit is asking questions. The goal is to build a classifier that can 
-                                determine which subreddit a post is from, given the text of the post. I used the Pushshift API to scrape 60,000 posts from he Legal Advice  and 
+                                determine which subreddit a post is from, given the text of the post. I used the Pushshift API to scrape 60,000 posts from the Legal Advice and 
                                 No Stupid Questions subreddits. Data was cleaned to address removed posts, missing values, and duplicates, as well as special characters and text features. <br><br> 
                                 I used Vader sentiment analysis to explore key differences, as well as word frequency by subreddit. CountVectorizer was used to turn all words into numerical 
                                 values. I tested out several different types of classification models and utilized GridSearch and pipelines to hypertune parameters. Logistic regression 
